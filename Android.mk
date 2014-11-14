@@ -1,3 +1,4 @@
+ifeq ($(TARGET_QCOM_DISPLAY_VARIANT),)
 ifneq ($(TARGET_DISABLE_DISPLAY),true)
 sdm-libs := sdm/libs
 display-hals := include libdebug $(sdm-libs)/utils $(sdm-libs)/core
@@ -19,3 +20,4 @@ endif
 endif
 endif
 endif #TARGET_DISABLE_DISPLAY
+endif #TARGET_QCOM_DISPLAY_VARIANT
